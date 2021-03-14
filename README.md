@@ -28,11 +28,10 @@ Este projeto foi desenvolvido com as seguintes tecnologias
 - [x] Barra de progressão para o próximo nível e sua XP atual.
 
 ## :clipboard: Adicionais e Melhorias (Danilo Martin)
-- [] Criar API para salvar as informações e retirar utilização de cookies.
+- [x] Criar API para salvar as informações e retirar utilização de cookies.
 - [] Criar tela de login com o campo para o usuário preencher seu login do GitHub.
-- [] Criar autenticação no sistema com login do GitHub.
+- [x] Criar autenticação no sistema com login do GitHub.
 - [] Criar botão para que o usuário consiga mudar o tempo do ciclo.
-- [] Aumentar temporizador para contar com horas, minutos e segundos.
 - [] Criar som para a exibição do modal do Level UP e estilizar com efeito de transição suave.
 - [] Melhorar a responsividade do site.
 - [] Criar tema dark/light.
