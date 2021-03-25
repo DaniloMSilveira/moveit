@@ -32,8 +32,8 @@ Este projeto foi desenvolvido com as seguintes tecnologias
 - [] Criar tela de login com o campo para o usuário preencher seu login do GitHub.
 - [x] Criar autenticação no sistema com login do GitHub.
 - [] Criar botão para que o usuário consiga mudar o tempo do ciclo.
-- [] Criar som para a exibição do modal do Level UP e estilizar com efeito de transição suave.
-- [] Melhorar a responsividade do site.
+- [x] Criar som para a exibição do modal do Level UP e estilizar com efeito de transição suave.
+- [x] Melhorar a responsividade do site.
 - [] Criar tema dark/light.
 - [] Criar pagina de ranking com o level e experiencia de outros usuários (Podendo selecionar entre 5, 10, 30 e 50).
 - [] Deixar os desafios salvos no banco de dados e criar página exibindo a quantidade que o usuário concluiu de cada desafio (nova pagina customizada com SSR) ao clicar em sua foto de perfil.

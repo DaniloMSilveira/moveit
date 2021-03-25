@@ -6,26 +6,10 @@ import * as yup from "yup";
 
 export default {
   async show(req: Request, res: Response) {
-    const { id } = req.body;
-
-    const schema = yup.object().shape({
-      id: yup.number().required()
-    });
-
-    try {
-      await schema.validate(req.body, { abortEarly: false });
-    } catch (err) {
-      throw new AppError(err);
-    }
-
     try {
       const challengesRepository = getCustomRepository(ChallengesRepository);
 
-      const challenge = await challengesRepository.findByIds([id]);
-
-      if (!challenge) {
-        throw new AppError("Challenge not exists!");
-      }
+      const challenge = await challengesRepository.find();
 
       return res.status(201).json({
         status: 'sucess',
@@ -98,7 +82,9 @@ export default {
     try {
       const challengesRepository = getCustomRepository(ChallengesRepository);
 
-      const challenge = await challengesRepository.findByIds([id]);
+      const challenge = await challengesRepository.findOne({
+        id
+      });
 
       if (!challenge) {
         throw new AppError("Challenge not exists!");
@@ -125,7 +111,9 @@ export default {
     try {
       const challengesRepository = getCustomRepository(ChallengesRepository);
 
-      const challenge = await challengesRepository.findByIds([id]);
+      const challenge = await challengesRepository.findOne({
+        id
+      });
 
       if (!challenge) {
         throw new AppError("Challenge not exists!");

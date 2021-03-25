@@ -55,6 +55,8 @@ export function ChallengesProvider({
     }, [level, currentExperience, challengesCompleted]);
 
     function levelUp() {
+      new Audio('/level-up.mp3').play();
+
       setLevel(level + 1);
       setIsLevelUpModalOpen(true);
     }
